@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper scissor</title>
+</head>
+<body>
+    <div class="container">
+        <div class="creator">Created By: <strong style="color: yello;">Shiva</strong></div>
+        <div class="scores">
+            <p><strong>Your Score = </strong><span id="user-score">0</span></p>
+            <p><strong style="color: blue;">WELCOME TO ROCK PAPER SCISSOR GAME</strong></p>
+            <p><strong>Computer Score = </strong><span id="computer-score">0</span></p>
+        </div>
+
+        <div>
+            <input required type="text" id="user-input"
+                placeholder="0 for rock, 1 for paper , 2 for scissor Enter your choice...">
+            <button class="btn" id="btn">Click Me</button>
+        </div>
+
+        <hr style="margin-top: 20px;">
+        <div id="victory" class="victory" style="text-align: center;"></div>
+
+        <div class="choices">
+            <p><strong>Your Choice = </strong><span id="user-choice"></span></p>
+            <p><strong>Computer Choice =</strong> <span id="computer-choice"></span></p>
+        </div>
+
+        <div class="elements">
+            <div id="rock" class="rock element">
+                <img class="hide" src="./img/rock.png" alt="">
+            </div>
+            <div id="paper" class="paper element">
+                <img class="hide" src="./img/paper.png" alt="">
+            </div>
+            <div id="scissor" class="scissor element">
+                <img class="hide" src="./img/scissor.png" alt="">
+            </div>
+        </div>
+
+        <div class="elements">
+            <div class="element" id="user-img"></div>
+            <div class="element" id="computer-img"></div>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
